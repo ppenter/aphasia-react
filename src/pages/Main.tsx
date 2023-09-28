@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import { useRecoilState } from "recoil";
 import { ttsState, voicesState } from "../states/tts";
 
+import LazyLoad from 'react-lazy-load';
+
 export const MainPage: React.FC<PropsWithChildren> = () => {
     const {t, i18n} = useTranslation(['default']);
     const params = useParams()
@@ -22,13 +24,14 @@ export const MainPage: React.FC<PropsWithChildren> = () => {
           setTTS(_tts)
           console.log('Set voice: ', voice)
   },[i18n?.language, item, params])
-  
+
     return(
         <div className="flex flex-col p-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
             {mainMenu?.map((item, index) => {
+                console.log(index)
                 return (
-                    <CardButton to={item.href} title={item.title} img={item.img} key={index} titleClass="text-2xl"/>
+                    <CardButton to={item.href} title={item.title} img={item.img} key={index} titleClass="text-2xl" indexColor={index}/>
                 )
             }
         )}

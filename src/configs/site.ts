@@ -81,66 +81,12 @@ export const mainMenu =  [
     },
     {
         title: "typetext",
-        img: "/images/menu/wave.png",
-        href: "/typetext",
-        list: [
-            {
-                "title": "eat",
-                "img": "/images/menu/wave.png",
-                "speech": "I want to eat"
-            },
-            {
-                "title": "drink",
-                "img": "/images/menu/cup.png",
-                "speech": "I want to drink"
-            },
-            {
-                "title": "get up",
-                "img": "/images/menu/hand.png",
-                "speech": "I want to get up"
-            },
-            {
-                "title": "rest",
-                "img": "/images/menu/pain.png",
-                "speech": "I want to rest"
-            },
-            {
-                "title": "use the restroom",
-                "img": "/images/menu/toilet.png",
-                "speech": "I want to use the restroom"
-            }
-        ]
+        img: "/images/menu/chat.png",
+        href: "/tts",
     },
     {
         title: "favorites",
-        img: "/images/menu/wave.png",
+        img: "/images/menu/heart.png",
         href: "/favorites",
-        list: [
-            {
-                "title": "eat",
-                "img": "/images/menu/wave.png",
-                "speech": "I want to eat"
-            },
-            {
-                "title": "drink",
-                "img": "/images/menu/cup.png",
-                "speech": "I want to drink"
-            },
-            {
-                "title": "get up",
-                "img": "/images/menu/hand.png",
-                "speech": "I want to get up"
-            },
-            {
-                "title": "rest",
-                "img": "/images/menu/pain.png",
-                "speech": "I want to rest"
-            },
-            {
-                "title": "use the restroom",
-                "img": "/images/menu/toilet.png",
-                "speech": "I want to use the restroom"
-            }
-        ]
     }
 ]

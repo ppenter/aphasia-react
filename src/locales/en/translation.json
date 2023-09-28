@@ -37,5 +37,5 @@
       "speech_afraid": "I am afraid",
       "tired": "Tired",
       "speech_tired": "I am tired",
-      "txttospeech": "Text to Speech"
+      "tts": "Text to Speech"
   }

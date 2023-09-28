@@ -16,11 +16,12 @@ import { SettingPage } from './pages/settings';
 import { ListPage } from './pages/lists';
 import {
   RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
 } from 'recoil';
+
+import { TypeTextPage } from './pages/type-text';
+import { FavoritesPage } from './pages/favorites';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <MainPage /> },
       { path: "/settings", element: <SettingPage /> },
-      { path: "/:item", element: <ListPage />}
+      { path: "/tts", element: <TypeTextPage />},
+      { path: "/favorites", element: <FavoritesPage />},
+      { path: "/:item", element: <ListPage />},
     ]
   },
 ]);
@@ -41,6 +44,7 @@ root.render(
   <React.StrictMode>
     <RecoilRoot>
     <RouterProvider router={router} />
+    <ToastContainer autoClose={1000} />
     </RecoilRoot>
   </React.StrictMode>
 );
