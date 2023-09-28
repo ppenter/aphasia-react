@@ -94,18 +94,15 @@ export const ListView: React.FC<IListView> = ({children, list=mockList}) => {
 
     return(
         <div className="flex flex-col p-4">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="flex gap-2 flex-wrap justify-evenly">
             {list?.map((item, index) => {
                 const isFav = favorites?.find((e: any) => e == item.speech)
                 return (
                     <div key={item.title} onClick={() => {
                         speak(t(`speech_${item.title}`))
                     }}>
-                    <CardButtonSmall img={item.img} key={index} titleClass="text-2xl">
-                        <div className="flex gap-4 items-center justify-between w-full">
-                            <p>
-                            {t(item.title)}
-                            </p>
+                    <CardButtonSmall title={item.title} img={item.img} key={index} titleClass="text-2xl">
+                        <div className="flex gap-4 items-center justify-center w-full">
                             <img alt="heart" src={isFav ? HeartFull : Heart} className="w-6 h-6" onClick={e => {
                                 e.stopPropagation()
                                 setFavorites((old: any) => {

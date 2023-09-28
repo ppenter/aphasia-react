@@ -10,7 +10,7 @@ export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
     return (
         <div className="flex h-screen flex flex-col pb-32 pt-16">
         <Outlet/>
-        <div className="fixed bottom-0 p-6 w-full bg-white">
+        <div className="fixed bottom-0 p-6 w-full bg-white shadow-2xl">
             <div className="flex gap-4 w-full">
             {
                 siteConfig?.navMenu?.map((item, index) => {
