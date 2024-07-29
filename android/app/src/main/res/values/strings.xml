@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AphasiaTalk</string>
+    <string name="title_activity_main">AphasiaTalk</string>
+    <string name="package_name">com.muict.aphasiatalk</string>
+    <string name="custom_url_scheme">com.muict.aphasiatalk</string>
+</resources>

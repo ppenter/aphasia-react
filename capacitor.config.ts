@@ -1,12 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.aphasia.app',
-  appName: 'aphasia-react',
-  webDir: 'build',
-  server: {
-    androidScheme: 'https'
-  }
+  appId: 'com.muict.aphasiatalk',
+  appName: 'AphasiaTalk',
+  webDir: 'build'
 };
 
 export default config;

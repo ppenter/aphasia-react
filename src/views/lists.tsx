@@ -13,6 +13,7 @@ import { toast } from "react-toastify";
 
 export interface IListView extends PropsWithChildren{
     list?: any[]
+    title: string
 }
 
 const mockList = [
@@ -43,7 +44,7 @@ const mockList = [
     }
 ]
 
-export const ListView: React.FC<IListView> = ({children, list=mockList}) => {
+export const ListView: React.FC<IListView> = ({children, list=mockList, title}) => {
     const {t, i18n} = useTranslation(['default']);
 
     const [favorites, setFavorites] = useRecoilState(favoriteState)
@@ -94,22 +95,24 @@ export const ListView: React.FC<IListView> = ({children, list=mockList}) => {
 
     return(
         <div className="flex flex-col p-4">
-            <div className="flex gap-2 flex-wrap justify-evenly">
+            <div className="grid grid-cols-2 gap-4 pb-32 sm:grid-cols-5 lg:grid-cols-10">
             {list?.map((item, index) => {
-                const isFav = favorites?.find((e: any) => e == item.speech)
+                const isFav = favorites?.find((e: any) => e == item.title)
                 return (
                     <div key={item.title} onClick={() => {
-                        speak(t(`speech_${item.title}`))
+                        speak(item?.speech || `${t(item?.prefix?.toString() || "") + " " + t(item?.title)}`)
                     }}>
-                    <CardButtonSmall title={item.title} img={item.img} key={index} titleClass="text-2xl">
-                        <div className="flex gap-4 items-center justify-center w-full">
+                    <CardButtonSmall title={item.title} img={
+                        `/images/items/${item.title?.toLocaleLowerCase()?.replaceAll(' ', '_')}.png`
+                    } key={index} titleClass="text-2xl">
+                        <div className="flex items-center justify-center w-full gap-4">
                             <img alt="heart" src={isFav ? HeartFull : Heart} className="w-6 h-6" onClick={e => {
                                 e.stopPropagation()
                                 setFavorites((old: any) => {
                                     if(isFav){
-                                        return old.filter((e: any) => e != item.speech)
+                                        return old.filter((e: any) => e != item.title)
                                     }else{
-                                        return [...old, item.speech]
+                                        return [...old, item.title]
                                     }
                                 }
                                 )

@@ -10,12 +10,14 @@ import { favoriteState } from "../states/fav";
 import Heart from '../icons/heart.svg'
 import HeartFull from '../icons/heart-full.svg'
 import { toast } from "react-toastify";
+import { ListView } from "../views/lists";
 
 export const ListPage: React.FC<PropsWithChildren> = ({children}) => {
-    const {t, i18n} = useTranslation(['default']);
+    const {t, i18n} = useTranslation(['default'])
+    const {t: speechT} = useTranslation(['speech'])
     const params = useParams()
-    const {item} = params
-    const menu = mainMenu?.find(e => e.title == item)
+    const {item: title} = params
+    const menu = mainMenu?.find(e => e.title == title)
 
     const [favorites, setFavorites] = useRecoilState(favoriteState)
 
@@ -44,6 +46,7 @@ export const ListPage: React.FC<PropsWithChildren> = ({children}) => {
             toast.error('TTS not ready')
             return
         }
+        console.log('Speaking: ', txt)
         tts.text = txt
         speechSynthesis.speak(tts)
         toast.success(t(txt))
@@ -56,42 +59,19 @@ export const ListPage: React.FC<PropsWithChildren> = ({children}) => {
             const voice = voices.find(e => e.lang.includes(i18n?.language as string))
             _tts.voice = voice || null
             setTTS(_tts)
-            console.log('Set voice: ', voice)
-    },[i18n?.language, item, params, setTTS, voices])
+    },[i18n?.language, title, params, setTTS, voices])
 
     useEffect(() => {
         loadVoices()
-},[i18n?.language, item, params])
+},[i18n.language, title, params])
 
-    return(
-        <div className="flex flex-col p-4">
-            <div className="flex gap-4 flex-wrap justify-evenly">
-            {menu?.list?.map((item, index) => {
-                const isFav = favorites?.find((e: any) => e == item.speech)
-                return (
-                    <div key={item.title} onClick={() => {
-                        speak(t(`speech_${item.title}`))
-                    }}>
-                    <CardButtonSmall title={item.title} img={item.img} key={index} titleClass="text-2xl">
-                        <div className="flex gap-2 items-center justify-center w-full">
-                            <img alt="heart" src={isFav ? HeartFull : Heart} className="w-6 h-6" onClick={e => {
-                                e.stopPropagation()
-                                setFavorites((old: any) => {
-                                    if(isFav){
-                                        return old.filter((e: any) => e != item.speech)
-                                    }else{
-                                        return [...old, item.speech]
-                                    }
-                                }
-                                )
-                            }}/>
-                        </div>
-                    </CardButtonSmall>
-                    </div>
-                )
-            }
-        )}
-        </div>
-        </div>
-    )
+return (
+    <ListView list={menu?.list?.map(l => {
+        return {
+            title: l.title,
+            img: l.img,
+            prefix: menu.title,
+        }
+    })} title={title?.toString() || ""}/>
+)
 }

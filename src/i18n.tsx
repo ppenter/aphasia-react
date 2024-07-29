@@ -9,9 +9,9 @@ const resources = {
   en: {
     default: en,
   },
-    th: {
-      default: th,
-    }
+  th: {
+    default: th,
+  }
 }
 
 i18next
