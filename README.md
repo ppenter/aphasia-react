@@ -2,6 +2,13 @@
 
  AphasiaTalk is a cross-platform application built using CapacitorJS and Yarn. It allows you to develop, build, and export your application to various platforms (iOS, Android, Web) seamlessly.
 
+# Table of Contents
+- [AphasiaTalk](#aphasiatalk)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Development](#development)
+
 ## Prerequisites
 - Node.js (>= 20)
 - Yarn (>= 2.x)
