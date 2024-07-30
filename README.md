@@ -8,6 +8,12 @@
   - [Getting Started](#getting-started)
     - [Installation](#installation)
     - [Development](#development)
+    - [Building and Exporting](#building-and-exporting)
+    - [Additional Capacitor Commands](#additional-capacitor-commands)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Prerequisites
 - Node.js (>= 20)
