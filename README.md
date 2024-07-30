@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# AphasiaTalk
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ AphasiaTalk is a cross-platform application built using CapacitorJS and Yarn. It allows you to develop, build, and export your application to various platforms (iOS, Android, Web) seamlessly.
 
-## Available Scripts
+## Prerequisites
+- Node.js (>= 20)
+- Yarn (>= 2.x)
+- Capacitor CLI (>= 5.x)
 
-In the project directory, you can run:
+*Ensure you have these tools installed before proceeding.*
 
-### `npm start`
+## Getting Started
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started, clone the repository and install the dependencies using Yarn:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+yarn install
+```
+This will install all the necessary packages required for the project.
 
-### `npm test`
+### Development
+To start the development server and begin working on the application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+yarn dev
+```
+This will start a local development server, allowing you to view your application in the browser with live reloading.
 
-### `npm run build`
+### Building and Exporting
+To build the application and prepare it for deployment on various platforms, use the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn export
+```
+This command will:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Build the project
+- Copy the built assets to the Capacitor native projects
+- Sync the changes with the native projects
+Internally, yarn export runs the following commands:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn build && npx cap copy && npx cap sync
+```
 
-### `npm run eject`
+### Additional Capacitor Commands
+You may need to run additional Capacitor commands depending on your specific use case. Here are a few commonly used ones:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Open the iOS project in Xcode:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npx cap open ios
+```
+Open the Android project in Android Studio:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npx cap open android
+```
+Update Capacitor plugins:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npx cap update
+```
 
-## Learn More
+## Project Structure
+- `src/`: Contains the source code for your application.
+- `public/`: Contains static assets and the main HTML file.
+- `android/`: Android native project.
+- `ios/`: iOS native project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
+If you would like to contribute to this project, please fork the repository and create a pull request with your changes. Ensure that your code adheres to the project's coding standards and include relevant tests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+For any inquiries or support, please contact [jarupak.sri@gmail.com].
