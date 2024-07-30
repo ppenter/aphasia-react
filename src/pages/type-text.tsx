@@ -1,40 +1,34 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useRecoilState } from "recoil";
-import { textState, ttsState, voicesState } from "../states/tts";
+import { textState, ttsState, voicesState, voiceState } from "../states/tts";
 import { toast } from "react-toastify";
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
 
 export const TypeTextPage: React.FC<PropsWithChildren> = () => {
     const {t, i18n} = useTranslation(['default']);
     const [text, setText] = useRecoilState(textState)
     const [voices, setVoices] = useRecoilState(voicesState)
+    const [voice, setVoice] = useRecoilState(voiceState)
+    const [languages, setLanguages] = useState<string[]>([])
     const [tts, setTTS] = useRecoilState(ttsState)
 
-    const loadVoices = () => {
-        let _tts = new SpeechSynthesisUtterance()
-        const voices = speechSynthesis.getVoices()
+    const loadVoices = async () => {
+        const {voices} = await TextToSpeech.getSupportedVoices()
         setVoices(voices)
         const voice = voices?.find(e => e.lang.includes(i18n?.language as string))
-        _tts.voice = voice || null
-        setTTS(_tts)
-        console.log('Set voice: ', voice)
+        setVoice(voice)
+        const langs = await TextToSpeech.getSupportedLanguages()
+        setLanguages(langs.languages)
     }
 
-    function speak(txt: string){
-        if(!tts){
-            loadVoices()
-            toast.error('TTS not ready')
-            return
-        }
-        if(speechSynthesis.speaking) return 
-        if(!tts?.voice?.lang.includes(i18n?.language as string)){
-            loadVoices()
-            toast.error('TTS not ready')
-            return
-        }
-        tts.text = txt
-        speechSynthesis.speak(tts)
+    async function speak(txt: string){
+        await loadVoices()
         toast.success(t(txt))
+        await TextToSpeech.speak({
+            text: txt,
+            lang: i18n?.language
+        })
     }
     return(
         <div className="flex flex-col p-6">
@@ -46,12 +40,12 @@ export const TypeTextPage: React.FC<PropsWithChildren> = () => {
                     value={text}
                     onChange={e => {
                         setText(e.target.value)
-                    }} type="text" className="border border-gray-300 rounded-md p-2"/>
+                    }} type="text" className="p-2 border border-gray-300 rounded-md"/>
                 </div>
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col items-center gap-2">
                     <button onClick={e => {
                         speak(text)
-                    }} className="bg-gray-200 text-white rounded-md w-fit p-8 text-4xl">🔊</button>
+                    }} className="p-8 text-4xl text-white bg-gray-200 rounded-md w-fit">🔊</button>
                 </div>
             </div>
         </div>

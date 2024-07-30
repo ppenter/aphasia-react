@@ -1,15 +1,16 @@
-import { PropsWithChildren, useEffect } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import { mainMenu, siteConfig } from "../configs/site";
 import { CardButton } from "../components/card-button";
 import { useParams } from "react-router-dom";
 import { CardButtonSmall } from "../components/card-button-small";
 import { useTranslation } from "react-i18next";
 import { useRecoilState } from "recoil";
-import { ttsState, voicesState } from "../states/tts";
+import { ttsState, voicesState, voiceState } from "../states/tts";
 import { favoriteState } from "../states/fav";
 import Heart from '../icons/heart.svg'
 import HeartFull from '../icons/heart-full.svg'
 import { toast } from "react-toastify";
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
 
 export interface IListView extends PropsWithChildren{
     list?: any[]
@@ -50,48 +51,31 @@ export const ListView: React.FC<IListView> = ({children, list=mockList, title}) 
     const [favorites, setFavorites] = useRecoilState(favoriteState)
 
     const [voices, setVoices] = useRecoilState(voicesState)
-    const [tts, setTTS] = useRecoilState(ttsState)
+    const [voice, setVoice] = useRecoilState(voiceState)
+    const [languages, setLanguages] = useState<string[]>([])
+    // const [tts, setTTS] = useRecoilState(ttsState)
 
-    const loadVoices = () => {
-        let _tts = new SpeechSynthesisUtterance()
-        const voices = speechSynthesis.getVoices()
+    const loadVoices = async () => {
+        const {voices} = await TextToSpeech.getSupportedVoices()
         setVoices(voices)
         const voice = voices?.find(e => e.lang.includes(i18n?.language as string))
-        _tts.voice = voice || null
-        setTTS(_tts)
-        console.log('Set voice: ', voice)
+        setVoice(voice)
+        const langs = await TextToSpeech.getSupportedLanguages()
+        setLanguages(langs.languages)
     }
 
-    function speak(txt: string){
-        if(!tts){
-            loadVoices()
-            toast.error('TTS not ready')
-            return
-        }
-        if(speechSynthesis.speaking) return 
-        if(!tts?.voice?.lang.includes(i18n?.language as string)){
-            loadVoices()
-            toast.error('TTS not ready')
-            return
-        }
-        tts.text = txt
-        speechSynthesis.speak(tts)
+    async function speak(txt: string){
+        await loadVoices()
         toast.success(t(txt))
+        await TextToSpeech.speak({
+            text: txt,
+            lang: i18n?.language
+        })
     }
-
-    useEffect(() => {
-        let _tts = new SpeechSynthesisUtterance()
-            if(!voices) return
-            console.log('Loading voice')
-            const voice = voices.find(e => e.lang.includes(i18n?.language as string))
-            _tts.voice = voice || null
-            setTTS(_tts)
-            console.log('Set voice: ', voice)
-    },[i18n?.language, setTTS, voices])
 
     useEffect(() => {
         loadVoices()
-},[i18n?.language])
+    },[i18n?.language])
 
     return(
         <div className="flex flex-col p-4">
@@ -99,8 +83,8 @@ export const ListView: React.FC<IListView> = ({children, list=mockList, title}) 
             {list?.map((item, index) => {
                 const isFav = favorites?.find((e: any) => e == item.title)
                 return (
-                    <div key={item.title} onClick={() => {
-                        speak(item?.speech || `${t(item?.prefix?.toString() || "") + " " + t(item?.title)}`)
+                    <div key={item.title} onClick={async () => {
+                        await speak(item?.speech || `${t(item?.prefix?.toString() || "") + " " + t(item?.title)}`)
                     }}>
                     <CardButtonSmall title={item.title} img={
                         `/images/items/${item.title?.toLocaleLowerCase()?.replaceAll(' ', '_')}.png`

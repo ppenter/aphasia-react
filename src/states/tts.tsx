@@ -5,6 +5,11 @@ export const voicesState = atom<SpeechSynthesisVoice[] | undefined>({
     default: undefined, // default value (aka initial value)
   });
 
+export const voiceState = atom<SpeechSynthesisVoice | undefined>({
+    key: 'voiceState', // unique ID (with respect to other atoms/selectors)
+    default: undefined, // default value (aka initial value)
+})
+
 export const ttsState = atom<SpeechSynthesisUtterance | undefined>({
     key: 'ttsState', // unique ID (with respect to other atoms/selectors)
     default: undefined, // default value (aka initial value)
