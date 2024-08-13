@@ -11,9 +11,8 @@ export const ListPage: React.FC<PropsWithChildren> = ({children}) => {
 return (
     <ListView list={menu?.list?.map(l => {
         return {
-            title: l.title,
-            img: l.img,
-            prefix: menu.title,
+            ...l,
+            id: `${menu?.title}.${l.title}`
         }
     })} title={title?.toString() || ""}/>
 )

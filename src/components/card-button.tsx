@@ -7,7 +7,7 @@ export const CardButton = ({title='iwant', to, img='/images/menu/wave.png', chil
   const color = genColor((indexColor + 1) * 4444)
     return(
       <Link to={to}>
-      <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex items-center py-6 px-4 justify-evenly gap-4"
+      <div className="flex items-center gap-4 px-4 py-12 bg-white justify-evenly"
       style={{
         backgroundColor: `#${color}`,
         opacity: 0.9
