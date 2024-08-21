@@ -1,14 +1,14 @@
-export function genColor (seed: number) {
-    let rand = Math.floor((Math.abs(Math.sin(seed) * 16777215)));
-    let color = rand.toString(16);
-    // pad any colors shorter than 6 characters with leading 0s
-    while(color.length < 6) {
-      color = '0' + color;
-    }
-  
-    return color;
+export function genColor(seed: number) {
+  let rand = Math.floor(Math.abs(Math.sin(seed) * 16777215));
+  let color = rand.toString(16);
+  // pad any colors shorter than 6 characters with leading 0s
+  while (color.length < 6) {
+    color = "0" + color;
   }
 
-export function cn (...args: any[]) {
-    return args.filter(Boolean).join(' ')
-  }
+  return color;
+}
+
+export function cn(...args: any[]) {
+  return args.filter(Boolean).join(" ");
+}

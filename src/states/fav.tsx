@@ -1,10 +1,10 @@
 import { atom } from "recoil";
-import { recoilPersist } from 'recoil-persist'
+import { recoilPersist } from "recoil-persist";
 
-const { persistAtom } = recoilPersist()
+const { persistAtom } = recoilPersist();
 
 export const favoriteState = atom<Array<any>>({
-    key: 'favoriteState',
-    default: [],
-    effects_UNSTABLE: [persistAtom],
+  key: "favoriteState",
+  default: [],
+  effects_UNSTABLE: [persistAtom],
 });

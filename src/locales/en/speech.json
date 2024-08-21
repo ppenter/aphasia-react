@@ -1,972 +1,990 @@
 {
-    "iwant": {
-        "__speech__": "I want",
-        "cane": {
-            "speech": "I want to use a cane",
-            "text": "cane"
-        },
-        "comb": {
-            "speech": "I want to comb",
-            "text": "comb"
-        },
-        "drawing": {
-            "speech": "I want to draw",
-            "text": "drawing"
-        },
-        "eat": {
-            "speech": "I want to eat",
-            "text": "eat"
-        },
-        "exercise": {
-            "speech": "I want to exercise",
-            "text": "exercise"
-        },
-        "go out": {
-            "speech": "I want to go out",
-            "text": "go out"
-        },
-        "hair wash": {
-            "speech": "I want to wash my hair",
-            "text": "hair wash"
-        },
-        "listen to music": {
-            "speech": "I want to listen to music",
-            "text": "listen to music"
-        },
-        "medicine": {
-            "speech": "I want to take medicine",
-            "text": "medicine"
-        },
-        "nail cut": {
-            "speech": "I want to cut my nails",
-            "text": "nail cut"
-        },
-        "pee": {
-            "speech": "I want to pee",
-            "text": "pee"
-        },
-        "poop": {
-            "speech": "I want to poop",
-            "text": "poop"
-        },
-        "powder": {
-            "speech": "I want to apply powder",
-            "text": "powder"
-        },
-        "read": {
-            "speech": "I want to read",
-            "text": "read"
-        },
-        "shopping": {
-            "speech": "I want to go shopping",
-            "text": "shopping"
-        },
-        "shower": {
-            "speech": "I want to take a shower",
-            "text": "shower"
-        },
-        "sit": {
-            "speech": "I want to sit",
-            "text": "sit"
-        },
-        "sleep": {
-            "speech": "I want to sleep",
-            "text": "sleep"
-        },
-        "talk": {
-            "speech": "I want to talk",
-            "text": "talk"
-        },
-        "teeth brush": {
-            "speech": "I want to brush my teeth",
-            "text": "teeth brush"
-        },
-        "toilet": {
-            "speech": "I want to use the toilet",
-            "text": "toilet"
-        },
-        "walk": {
-            "speech": "I want to walk",
-            "text": "walk"
-        },
-        "watch tv": {
-            "speech": "I want to watch TV",
-            "text": "watch tv"
-        },
-        "wheelchair": {
-            "speech": "I want to use a wheelchair",
-            "text": "wheelchair"
-        }
+  "iwant": {
+    "__speech__": "I want",
+    "cane": {
+      "speech": "I want to use a cane",
+      "text": "cane"
     },
-    "ifeel": {
-        "__speech__": "I feel",
-        "angry": {
-            "speech": "I feel angry",
-            "text": "angry"
-        },
-        "arm pain": {
-            "speech": "I feel arm pain",
-            "text": "arm pain"
-        },
-        "back pain": {
-            "speech": "I feel back pain",
-            "text": "back pain"
-        },
-        "bottom pain": {
-            "speech": "I feel bottom pain",
-            "text": "bottom pain"
-        },
-        "chest pain": {
-            "speech": "I feel chest pain",
-            "text": "chest pain"
-        },
-        "cold": {
-            "speech": "I feel cold",
-            "text": "cold"
-        },
-        "ear pain": {
-            "speech": "I feel ear pain",
-            "text": "ear pain"
-        },
-        "elbow pain": {
-            "speech": "I feel elbow pain",
-            "text": "elbow pain"
-        },
-        "eye pain": {
-            "speech": "I feel eye pain",
-            "text": "eye pain"
-        },
-        "feet pain": {
-            "speech": "I feel feet pain",
-            "text": "feet pain"
-        },
-        "hand pain": {
-            "speech": "I feel hand pain",
-            "text": "hand pain"
-        },
-        "happy": {
-            "speech": "I feel happy",
-            "text": "happy"
-        },
-        "head pain": {
-            "speech": "I feel head pain",
-            "text": "head pain"
-        },
-        "hip pain": {
-            "speech": "I feel hip pain",
-            "text": "hip pain"
-        },
-        "hot": {
-            "speech": "I feel hot",
-            "text": "hot"
-        },
-        "hungry": {
-            "speech": "I feel hungry",
-            "text": "hungry"
-        },
-        "itchy": {
-            "speech": "I feel itchy",
-            "text": "itchy"
-        },
-        "knee pain": {
-            "speech": "I feel knee pain",
-            "text": "knee pain"
-        },
-        "leg pain": {
-            "speech": "I feel leg pain",
-            "text": "leg pain"
-        },
-        "neck pain": {
-            "speech": "I feel neck pain",
-            "text": "neck pain"
-        },
-        "nose pain": {
-            "speech": "I feel nose pain",
-            "text": "nose pain"
-        },
-        "sad": {
-            "speech": "I feel sad",
-            "text": "sad"
-        },
-        "scared": {
-            "speech": "I feel scared",
-            "text": "scared"
-        },
-        "shoulder pain": {
-            "speech": "I feel shoulder pain",
-            "text": "shoulder pain"
-        },
-        "sleepy": {
-            "speech": "I feel sleepy",
-            "text": "sleepy"
-        },
-        "stomach pain": {
-            "speech": "I feel stomach pain",
-            "text": "stomach pain"
-        },
-        "stress": {
-            "speech": "I feel stressed",
-            "text": "stress"
-        },
-        "teeth pain": {
-            "speech": "I feel teeth pain",
-            "text": "teeth pain"
-        },
-        "tired": {
-            "speech": "I feel tired",
-            "text": "tired"
-        }
+    "comb": {
+      "speech": "I want to comb",
+      "text": "comb"
     },
-    "food": {
-        "__speech__": "",
-        "__group__": {
-            "fruit": "Fruit",
-            "curry": "Curry",
-            "main": "Main Course",
-            "yum": "Yum",
-            "dessert": "Dessert",
-            "steam": "Steam",
-            "stir fry": "Stir Fry",
-            "fried": "Fried",
-            "salad": "Salad"
-        },
-        "apple": {
-            "speech": "apple",
-            "text": "apple"
-        },
-        "cantaloop": {
-            "speech": "cantaloop",
-            "text": "cantaloop"
-        },
-        "rose apple": {
-            "speech": "rose apple",
-            "text": "rose apple"
-        },
-        "dragonfruit": {
-            "speech": "dragonfruit",
-            "text": "dragonfruit"
-        },
-        "durian": {
-            "speech": "durian",
-            "text": "durian"
-        },
-        "guava": {
-            "speech": "guava",
-            "text": "guava"
-        },
-        "pumpkin": {
-            "speech": "pumpkin",
-            "text": "pumpkin"
-        },
-        "banana": {
-            "speech": "banana",
-            "text": "banana"
-        },
-        "longan": {
-            "speech": "longan",
-            "text": "longan"
-        },
-        "lynchee": {
-            "speech": "lynchee",
-            "text": "lynchee"
-        },
-        "longkong": {
-            "speech": "longkong",
-            "text": "longkong"
-        },
-        "papaya": {
-            "speech": "papaya",
-            "text": "papaya"
-        },
-        "mango": {
-            "speech": "mango",
-            "text": "mango"
-        },
-        "mangostein": {
-            "speech": "mangostein",
-            "text": "mangostein"
-        },
-        "pineapple": {
-            "speech": "pineapple",
-            "text": "pineapple"
-        },
-        "strawberry": {
-            "speech": "strawberry",
-            "text": "strawberry"
-        },
-        "tamarind": {
-            "speech": "tamarind",
-            "text": "tamarind"
-        },
-        "watermelon": {
-            "speech": "watermelon",
-            "text": "watermelon"
-        },
-        "taro": {
-            "speech": "taro",
-            "text": "taro"
-        },
-        "orange": {
-            "speech": "orange",
-            "text": "orange"
-        },
-        "grape": {
-            "speech": "grape",
-            "text": "grape"
-        },
-        "rambutan": {
-            "speech": "rambutan",
-            "text": "rambutan"
-        },
-        "custard apple": {
-            "speech": "custard apple",
-            "text": "custard apple"
-        },
-        "jackfruit": {
-            "speech": "jackfruit",
-            "text": "jackfruit"
-        },
-        "จับฉ่าย": {
-            "speech": "Mixed Vegetable Stew",
-            "text": "Mixed Vegetable Stew"
-        },
-        "แกงจืดเต้าหู้": {
-            "speech": "Tofu Soup",
-            "text": "Tofu Soup"
-        },
-        "แกงเขียวหวาน": {
-            "speech": "Green Curry",
-            "text": "Green Curry"
-        },
-        "แกงมะระ": {
-            "speech": "Bitter Melon Soup",
-            "text": "Bitter Melon Soup"
-        },
-        "แกงส้มชะอม": {
-            "speech": "Sour Curry with Cha-Om",
-            "text": "Sour Curry with Cha-Om"
-        },
-        "แกงเหลืองหมู": {
-            "speech": "Yellow Curry with Pork",
-            "text": "Yellow Curry with Pork"
-        },
-        "ไข่พะโล้": {
-            "speech": "Five-Spice Eggs",
-            "text": "Five-Spice Eggs"
-        },
-        "แกงมัสมั่น": {
-            "speech": "Massaman Curry",
-            "text": "Massaman Curry"
-        },
-        "แกงเห็ด": {
-            "speech": "Mushroom Soup",
-            "text": "Mushroom Soup"
-        },
-        "พะแนงหมู": {
-            "speech": "Panang Pork Curry",
-            "text": "Panang Pork Curry"
-        },
-        "โป๊ะแตก": {
-            "speech": "Spicy Seafood Soup",
-            "text": "Spicy Seafood Soup"
-        },
-        "ซุปไก่": {
-            "speech": "Chicken Soup",
-            "text": "Chicken Soup"
-        },
-        "ต้มยำกุ้ง": {
-            "speech": "Tom Yum Kung",
-            "text": "Tom Yum Kung"
-        },
-        "ต้มแซบ": {
-            "speech": "Spicy Soup",
-            "text": "Spicy Soup"
-        },
-        "บะหมี่หมูแดง": {
-            "speech": "Egg Noodles with Red Pork",
-            "text": "Egg Noodles with Red Pork"
-        },
-        "บะหมี่หมูกรอบ": {
-            "speech": "Egg Noodles with Crispy Pork",
-            "text": "Egg Noodles with Crispy Pork"
-        },
-        "เบอร์เกอร์เนื้อ": {
-            "speech": "Beef Burger",
-            "text": "Beef Burger"
-        },
-        "สเต็กเนื้อ": {
-            "speech": "Beef Steak",
-            "text": "Beef Steak"
-        },
-        "ก๋วยเตี๋ยวไก่": {
-            "speech": "Chicken Noodles",
-            "text": "Chicken Noodles"
-        },
-        "เฝอ": {
-            "speech": "Pho",
-            "text": "Pho"
-        },
-        "ไส้กรอกเยอรมัน": {
-            "speech": "German Sausage",
-            "text": "German Sausage"
-        },
-        "โจ๊ก": {
-            "speech": "Rice Porridge",
-            "text": "Rice Porridge"
-        },
-        "ขนมจีน": {
-            "speech": "Fermented Rice Noodles",
-            "text": "Fermented Rice Noodles"
-        },
-        "ข้าวไข่เจียว": {
-            "speech": "Omelette with Rice",
-            "text": "Omelette with Rice"
-        },
-        "ข้าวไข่ข้นกุ้ง": {
-            "speech": "Rice with Scrambled Eggs and Shrimp",
-            "text": "Rice with Scrambled Eggs and Shrimp"
-        },
-        "ข้าวไก่ย่าง": {
-            "speech": "Grilled Chicken with Rice",
-            "text": "Grilled Chicken with Rice"
-        },
-        "ข้าวขาหมู": {
-            "speech": "Stewed Pork Leg with Rice",
-            "text": "Stewed Pork Leg with Rice"
-        },
-        "ข้าวคลุกกะปิ": {
-            "speech": "Shrimp Paste Fried Rice",
-            "text": "Shrimp Paste Fried Rice"
-        },
-        "ข้าวหมูทอดราดไข่": {
-            "speech": "Fried Pork with Rice and Egg",
-            "text": "Fried Pork with Rice and Egg"
-        },
-        "ข้าวมันไก่": {
-            "speech": "Hainanese Chicken Rice",
-            "text": "Hainanese Chicken Rice"
-        },
-        "ข้าวเหนียวหมูปิ้ง": {
-            "speech": "Grilled Pork with Sticky Rice",
-            "text": "Grilled Pork with Sticky Rice"
-        },
-        "ข้าวหน้ากะเพราหมูทอด": {
-            "speech": "Rice with Fried Pork and Basil",
-            "text": "Rice with Fried Pork and Basil"
-        },
-        "ข้าวหน้าเป็ด": {
-            "speech": "Rice with Duck",
-            "text": "Rice with Duck"
-        },
-        "ข้าวหน้าปลาดิบ": {
-            "speech": "Rice with Sashimi",
-            "text": "Rice with Sashimi"
-        },
-        "ข้าวหน้าแซลมอน": {
-            "speech": "Rice with Salmon",
-            "text": "Rice with Salmon"
-        },
-        "ข้าวผัดหมู": {
-            "speech": "Fried Rice with Pork",
-            "text": "Fried Rice with Pork"
-        },
-        "ข้าวผัดแกงเขียวหวาน": {
-            "speech": "Green Curry Fried Rice",
-            "text": "Green Curry Fried Rice"
-        },
-        "ข้าวผัดกุ้ง": {
-            "speech": "Fried Rice with Shrimp",
-            "text": "Fried Rice with Shrimp"
-        },
-        "ข้าวผัดปู": {
-            "speech": "Fried Rice with Crab",
-            "text": "Fried Rice with Crab"
-        },
-        "ข้าวผัดสับปะรด": {
-            "speech": "Pineapple Fried Rice",
-            "text": "Pineapple Fried Rice"
-        },
-        "ข้าวราดกระเพราไข่ดาว": {
-            "speech": "Rice with Basil and Fried Egg",
-            "text": "Rice with Basil and Fried Egg"
-        },
-        "ข้าวต้มหมู": {
-            "speech": "Rice Soup with Pork",
-            "text": "Rice Soup with Pork"
-        },
-        "ข้าวต้มปลา": {
-            "speech": "Rice Soup with Fish",
-            "text": "Rice Soup with Fish"
-        },
-        "เคบับ": {
-            "speech": "Kebab",
-            "text": "Kebab"
-        },
-        "ก๋วยเตี๋ยวเซี่ยงไฮ้": {
-            "speech": "Shanghai Noodles",
-            "text": "Shanghai Noodles"
-        },
-        "ก๋วยจั๊บ": {
-            "speech": "Guay Jub",
-            "text": "Guay Jub"
-        },
-        "ลักซา": {
-            "speech": "Laksa",
-            "text": "Laksa"
-        },
-        "มาม่า": {
-            "speech": "Instant Noodles",
-            "text": "Instant Noodles"
-        },
-        "แหนมเนือง": {
-            "speech": "Vietnamese Sausage",
-            "text": "Vietnamese Sausage"
-        },
-        "ก๋วยเตี๋ยว": {
-            "speech": "Noodles",
-            "text": "Noodles"
-        },
-        "น้ำตก": {
-            "speech": "Nam Tok",
-            "text": "Nam Tok"
-        },
-        "พาสต้า": {
-            "speech": "Pasta",
-            "text": "Pasta"
-        },
-        "พิซซ่า": {
-            "speech": "Pizza",
-            "text": "Pizza"
-        },
-        "เบอร์เกอร์หมู": {
-            "speech": "Pork Burger",
-            "text": "Pork Burger"
-        },
-        "สเต็กหมู": {
-            "speech": "Pork Steak",
-            "text": "Pork Steak"
-        },
-        "ผัดมาม่า": {
-            "speech": "Stir-Fried Instant Noodles",
-            "text": "Stir-Fried Instant Noodles"
-        },
-        "ผัดหมี่": {
-            "speech": "Stir-Fried Noodles",
-            "text": "Stir-Fried Noodles"
-        },
-        "ผัดซีอิ๊ว": {
-            "speech": "Stir-Fried Noodles with Soy Sauce",
-            "text": "Stir-Fried Noodles with Soy Sauce"
-        },
-        "ผัดไทย": {
-            "speech": "Pad Thai",
-            "text": "Pad Thai"
-        },
-        "ราเมน": {
-            "speech": "Ramen",
-            "text": "Ramen"
-        },
-        "ซาชิมิ": {
-            "speech": "Sashimi",
-            "text": "Sashimi"
-        },
-        "ยำทะเลเย็น": {
-            "speech": "Spicy Seafood Salad",
-            "text": "Spicy Seafood Salad"
-        },
-        "ซูชิ": {
-            "speech": "Sushi",
-            "text": "Sushi"
-        },
-        "เตี๋ยวต้มยำ": {
-            "speech": "Tom Yum Noodles",
-            "text": "Tom Yum Noodles"
-        },
-        "ฮะเก๋า": {
-            "speech": "Har Gow",
-            "text": "Har Gow"
-        },
-        "ห่อหมก": {
-            "speech": "Steamed Curry Fish",
-            "text": "Steamed Curry Fish"
-        },
-        "หอยแมลงภู่อบกระเทียม": {
-            "speech": "Garlic Butter Mussels",
-            "text": "Garlic Butter Mussels"
-        },
-        "หอยแมลงภู่อบ": {
-            "speech": "Steamed Mussels",
-            "text": "Steamed Mussels"
-        },
-        "ไข่เจียวลาวา": {
-            "speech": "Lava Omelette",
-            "text": "Lava Omelette"
-        },
-        "ไข่ต้ม": {
-            "speech": "Boiled Egg",
-            "text": "Boiled Egg"
-        },
-        "ขนมจีบ": {
-            "speech": "Dim Sum",
-            "text": "Dim Sum"
-        },
-        "ก๋วยเตี๋ยวหลอด": {
-            "speech": "Rice Noodle Rolls",
-            "text": "Rice Noodle Rolls"
-        },
-        "ขนมกุยช่าย": {
-            "speech": "Chinese Chive Dumplings",
-            "text": "Chinese Chive Dumplings"
-        },
-        "ปลานึ่งซีอิ๊ว": {
-            "speech": "Steamed Fish in Soy Sauce",
-            "text": "Steamed Fish in Soy Sauce"
-        },
-        "ปูนึ่ง": {
-            "speech": "Steamed Crab",
-            "text": "Steamed Crab"
-        },
-        "ซาลาเปา": {
-            "speech": "Steamed Bun",
-            "text": "Steamed Bun"
-        },
-        "ผักโขมอบชีส": {
-            "speech": "Baked Spinach with Cheese",
-            "text": "Baked Spinach with Cheese"
-        },
-        "ไก่ผัดขิง": {
-            "speech": "Ginger Chicken Stir-Fry",
-            "text": "Ginger Chicken Stir-Fry"
-        },
-        "ไก่ผัดหน่อไม้": {
-            "speech": "Stir-Fried Chicken with Bamboo Shoots",
-            "text": "Stir-Fried Chicken with Bamboo Shoots"
-        },
-        "กระเพราหมูสับ": {
-            "speech": "Minced Pork with Basil",
-            "text": "Minced Pork with Basil"
-        },
-        "หมูผัดขิง": {
-            "speech": "Stir-Fried Pork with Ginger",
-            "text": "Stir-Fried Pork with Ginger"
-        },
-        "หมูผัดน้ำมันหอย": {
-            "speech": "Stir-Fried Pork with Oyster Sauce",
-            "text": "Stir-Fried Pork with Oyster Sauce"
-        },
-        "ผัดผักบุ้ง": {
-            "speech": "Stir-Fried Morning Glory",
-            "text": "Stir-Fried Morning Glory"
-        },
-        "ปลาดุกฟู": {
-            "speech": "Crispy Catfish",
-            "text": "Crispy Catfish"
-        },
-        "ปลาราดพริก": {
-            "speech": "Fried Fish with Chili Sauce",
-            "text": "Fried Fish with Chili Sauce"
-        },
-        "ผัดฉ่า": {
-            "speech": "Spicy Stir-Fry",
-            "text": "Spicy Stir-Fry"
-        },
-        "ผัดคะน้า": {
-            "speech": "Stir-Fried Kale",
-            "text": "Stir-Fried Kale"
-        },
-        "ผัดผักรวม": {
-            "speech": "Stir-Fried Mixed Vegetables",
-            "text": "Stir-Fried Mixed Vegetables"
-        },
-        "ผัดผักกรูมพี่": {
-            "speech": "Stir-Fried Chinese Broccoli",
-            "text": "Stir-Fried Chinese Broccoli"
-        },
-        "ผัดผงกะหรี่": {
-            "speech": "Stir-Fried Curry Powder",
-            "text": "Stir-Fried Curry Powder"
-        },
-        "ผัดถั่วหมู": {
-            "speech": "Stir-Fried Pork with Beans",
-            "text": "Stir-Fried Pork with Beans"
-        },
-        "ผัดวุ้นเส้น": {
-            "speech": "Stir-Fried Glass Noodles",
-            "text": "Stir-Fried Glass Noodles"
-        },
-        "หอยกระเทียม": {
-            "speech": "Garlic Fried Shells",
-            "text": "Garlic Fried Shells"
-        },
-        "หอยราดพริก": {
-            "speech": "Chili Fried Shells",
-            "text": "Chili Fried Shells"
-        },
-        "เต้าหู้ผัดพริก": {
-            "speech": "Spicy Stir-Fried Tofu",
-            "text": "Spicy Stir-Fried Tofu"
-        },
-        "บัวลอย": {
-            "speech": "Bua Loy",
-            "text": "Bua Loy"
-        },
-        "เฉาก๊วย": {
-            "speech": "Grass Jelly",
-            "text": "Grass Jelly"
-        },
-        "ขนมครก": {
-            "speech": "Coconut Pudding",
-            "text": "Coconut Pudding"
-        },
-        "ขนมต้ม": {
-            "speech": "Steamed Coconut Dumplings",
-            "text": "Steamed Coconut Dumplings"
-        },
-        "ข้าวเหนียวมะม่วง": {
-            "speech": "Mango Sticky Rice",
-            "text": "Mango Sticky Rice"
-        },
-        "กวยบัวดึง": {
-            "speech": "Taro in Coconut Milk",
-            "text": "Taro in Coconut Milk"
-        },
-        "ลอดช่อง": {
-            "speech": "Lod Chong",
-            "text": "Lod Chong"
-        },
-        "เมลอนกะทิ": {
-            "speech": "Melon in Coconut Milk",
-            "text": "Melon in Coconut Milk"
-        },
-        "ขนมไทยรวม": {
-            "speech": "Mixed Thai Desserts",
-            "text": "Mixed Thai Desserts"
-        },
-        "ซาหลิม": {
-            "speech": "Salim",
-            "text": "Salim"
-        },
-        "บัวลอยเผือก": {
-            "speech": "Taro Balls in Coconut Milk",
-            "text": "Taro Balls in Coconut Milk"
-        },
-        "เต้าฮวย": {
-            "speech": "Tofu Dessert",
-            "text": "Tofu Dessert"
-        },
-        "ทับทิมกรอบ": {
-            "speech": "Water Chestnuts in Coconut Milk",
-            "text": "Water Chestnuts in Coconut Milk"
-        },
-        "เบคอนทอด": {
-            "speech": "Fried Bacon",
-            "text": "Fried Bacon"
-        },
-        "ห่อจ้อ": {
-            "speech": "Deep-Fried Crab Roll",
-            "text": "Deep-Fried Crab Roll"
-        },
-        "แก้วทอด": {
-            "speech": "Deep-Fried Spring Roll",
-            "text": "Deep-Fried Spring Roll"
-        },
-        "แก้วซ่า": {
-            "speech": "Fried Dumpling",
-            "text": "Fried Dumpling"
-        },
-        "ไข่ดาว": {
-            "speech": "Fried Egg",
-            "text": "Fried Egg"
-        },
-        "ไข่เจียว": {
-            "speech": "Omelette",
-            "text": "Omelette"
-        },
-        "ไข่นกกระทาทอด": {
-            "speech": "Fried Quail Eggs",
-            "text": "Fried Quail Eggs"
-        },
-        "ไข่ทอด": {
-            "speech": "Fried Egg",
-            "text": "Fried Egg"
-        },
-        "ไก่ย่าง": {
-            "speech": "Grilled Chicken",
-            "text": "Grilled Chicken"
-        },
-        "กุ้งเผา": {
-            "speech": "Grilled Shrimp",
-            "text": "Grilled Shrimp"
-        },
-        "คอหมูย่าง": {
-            "speech": "Grilled Pork Neck",
-            "text": "Grilled Pork Neck"
-        },
-        "หมึกทอด": {
-            "speech": "Fried Squid",
-            "text": "Fried Squid"
-        },
-        "นักเก็ต": {
-            "speech": "Nuggets",
-            "text": "Nuggets"
-        },
-        "ปลาทอด": {
-            "speech": "Fried Fish",
-            "text": "Fried Fish"
-        },
-        "เปลือกหอยย่าง": {
-            "speech": "Grilled Shellfish",
-            "text": "Grilled Shellfish"
-        },
-        "เสือร้องไห้": {
-            "speech": "Grilled Brisket",
-            "text": "Grilled Brisket"
-        },
-        "ทอดมัน": {
-            "speech": "Fish Cake",
-            "text": "Fish Cake"
-        },
-        "ยำกุ้งน้ำปลา": {
-            "speech": "Shrimp Salad with Fish Sauce",
-            "text": "Shrimp Salad with Fish Sauce"
-        },
-        "ลาบหมู": {
-            "speech": "Spicy Pork Salad",
-            "text": "Spicy Pork Salad"
-        },
-        "หมูมะนาว": {
-            "speech": "Pork Salad with Lime",
-            "text": "Pork Salad with Lime"
-        },
-        "น้ำพริกกะปิ": {
-            "speech": "Shrimp Paste Chili Dip",
-            "text": "Shrimp Paste Chili Dip"
-        },
-        "น้ำพริกปลาทู": {
-            "speech": "Mackerel Chili Dip",
-            "text": "Mackerel Chili Dip"
-        },
-        "น้ำพริกไข่ปู": {
-            "speech": "Crab Egg Chili Dip",
-            "text": "Crab Egg Chili Dip"
-        },
-        "น้ำตกหมู": {
-            "speech": "Spicy Grilled Pork Salad",
-            "text": "Spicy Grilled Pork Salad"
-        },
-        "ปลาลวก": {
-            "speech": "Boiled Fish",
-            "text": "Boiled Fish"
-        },
-        "สลัดไก่": {
-            "speech": "Chicken Salad",
-            "text": "Chicken Salad"
-        },
-        "สลัดปลาดอร์": {
-            "speech": "Salad with Fried Fish",
-            "text": "Salad with Fried Fish"
-        },
-        "สลัดผัก": {
-            "speech": "Vegetable Salad",
-            "text": "Vegetable Salad"
-        },
-        "ตับวอน": {
-            "speech": "Boiled Liver",
-            "text": "Boiled Liver"
-        },
-        "ตำข้าวโพด": {
-            "speech": "Spicy Corn Salad",
-            "text": "Spicy Corn Salad"
-        },
-        "ตำปลาร้า": {
-            "speech": "Spicy Salad with Fermented Fish",
-            "text": "Spicy Salad with Fermented Fish"
-        },
-        "ตำไทย": {
-            "speech": "Papaya Salad",
-            "text": "Papaya Salad"
-        },
-        "ยำรวมมิตรกุ้ง": {
-            "speech": "Mixed Seafood Salad with Shrimp",
-            "text": "Mixed Seafood Salad with Shrimp"
-        },
-        "ยำแซลมอน": {
-            "speech": "Salmon Salad",
-            "text": "Salmon Salad"
-        },
-        "ยำวุ้นเส้น": {
-            "speech": "Glass Noodle Salad",
-            "text": "Glass Noodle Salad"
-        }
+    "drawing": {
+      "speech": "I want to draw",
+      "text": "drawing"
     },
-    "beverage": {
-        "__speech__": "",
-        "__group__": {
-            "hot": "Hot",
-            "iced": "Iced",
-            "smoothie": "Smoothie",
-            "frappe": "Frappe"
-        },
-        "ชาเขียวเย็น": {"speech": "Iced Green Tea", "text": "Iced Green Tea"},
-        "ชาเย็น": {"speech": "Thai Iced Tea", "text": "Thai Iced Tea"},
-        "โค้ก": {"speech": "Coke", "text": "Coke"},
-        "กาแฟเย็น": {"speech": "Iced Coffee", "text": "Iced Coffee"},
-        "เก๊กฮวย": {"speech": "Chrysanthemum Tea", "text": "Chrysanthemum Tea"},
-        "น้ำใบบัวบก": {"speech": "Pennywort Juice", "text": "Pennywort Juice"},
-        "น้ำกระเจี๊ยบ": {"speech": "Roselle Juice", "text": "Roselle Juice"},
-        "น้ำมะนาว": {"speech": "Lemon Juice", "text": "Lemon Juice"},
-        "น้ำมะพร้าว": {"speech": "Coconut Water", "text": "Coconut Water"},
-        "น้ำเปล่า": {"speech": "Water", "text": "Water"},
-        "น้ำผึ้งมะนาว": {"speech": "Honey Lemon", "text": "Honey Lemon"},
-        "น้ำส้ม": {"speech": "Orange Juice", "text": "Orange Juice"},
-        "นมเย็น": {"speech": "Pink Milk", "text": "Pink Milk"},
-        "โอเลี้ยง": {"speech": "Thai Black Coffee", "text": "Thai Black Coffee"},
-        "แอปเปิ้ลปั่น": {"speech": "Apple Smoothie", "text": "Apple Smoothie"},
-        "กล้วยปั่น": {"speech": "Banana Smoothie", "text": "Banana Smoothie"},
-        "ชาเขียวปั่น": {"speech": "Green Tea Frappe", "text": "Green Tea Frappe"},
-        "โกโก้ปั่น": {"speech": "Cocoa Frappe", "text": "Cocoa Frappe"},
-        "กาแฟปั่น": {"speech": "Coffee Frappe", "text": "Coffee Frappe"},
-        "มิลค์เชค": {"speech": "Milkshake", "text": "Milkshake"},
-        "ผลไม้รวมปั่น": {"speech": "Mixed Fruit Smoothie", "text": "Mixed Fruit Smoothie"},
-        "สับปะรดปั่น": {"speech": "Pineapple Smoothie", "text": "Pineapple Smoothie"},
-        "สตรอว์เบอร์รี่ปั่น": {"speech": "Strawberry Smoothie", "text": "Strawberry Smoothie"},
-        "แตงโมปั่น": {"speech": "Watermelon Smoothie", "text": "Watermelon Smoothie"},
-        "ชาไทยปั่น": {"speech": "Thai Tea Frappe", "text": "Thai Tea Frappe"},
-        "ผักปั่น": {"speech": "Vegetable Smoothie", "text": "Vegetable Smoothie"},
-        "ชาเขียวร้อน": {"speech": "Hot Green Tea", "text": "Hot Green Tea"},
-        "กาแฟร้อน": {"speech": "Hot Coffee", "text": "Hot Coffee"},
-        "เก๊กฮวยร้อน": {"speech": "Hot Chrysanthemum Tea", "text": "Hot Chrysanthemum Tea"},
-        "น้ำมะนาวร้อน": {"speech": "Hot Lemon Juice", "text": "Hot Lemon Juice"},
-        "น้ำใบเตยร้อน": {"speech": "Hot Pandan Juice", "text": "Hot Pandan Juice"},
-        "น้ำชา": {"speech": "Hot Tea", "text": "Hot Tea"},
-        "น้ำเปล่าร้อน": {"speech": "Hot Water", "text": "Hot Water"},
-        "น้ำเต้าหู้ร้อน": {"speech": "Hot Soy Milk", "text": "Hot Soy Milk"}
+    "eat": {
+      "speech": "I want to eat",
+      "text": "eat"
     },
-    "location": {
-        "__speech__": "I want to go",
-        "home": {
-            "speech": "I want to go home",
-            "text": "home"
-        },
-        "hospital": {
-            "speech": "I want to go to the hospital",
-            "text": "hospital"
-        },
-        "grocery": {
-            "speech": "I want to go to the grocery store",
-            "text": "grocery store"
-        },
-        "temple": {
-            "speech": "I want to go to the temple",
-            "text": "temple"
-        },
-        "park":{
-            "speech": "I want to go to the park",
-            "text": "park"
-        },
-        "mall": {
-            "speech": "I want to go to the mall",
-            "text": "mall"
-        }
+    "exercise": {
+      "speech": "I want to exercise",
+      "text": "exercise"
+    },
+    "go out": {
+      "speech": "I want to go out",
+      "text": "go out"
+    },
+    "hair wash": {
+      "speech": "I want to wash my hair",
+      "text": "hair wash"
+    },
+    "listen to music": {
+      "speech": "I want to listen to music",
+      "text": "listen to music"
+    },
+    "medicine": {
+      "speech": "I want to take medicine",
+      "text": "medicine"
+    },
+    "nail cut": {
+      "speech": "I want to cut my nails",
+      "text": "nail cut"
+    },
+    "pee": {
+      "speech": "I want to pee",
+      "text": "pee"
+    },
+    "poop": {
+      "speech": "I want to poop",
+      "text": "poop"
+    },
+    "powder": {
+      "speech": "I want to apply powder",
+      "text": "powder"
+    },
+    "read": {
+      "speech": "I want to read",
+      "text": "read"
+    },
+    "shopping": {
+      "speech": "I want to go shopping",
+      "text": "shopping"
+    },
+    "shower": {
+      "speech": "I want to take a shower",
+      "text": "shower"
+    },
+    "sit": {
+      "speech": "I want to sit",
+      "text": "sit"
+    },
+    "sleep": {
+      "speech": "I want to sleep",
+      "text": "sleep"
+    },
+    "talk": {
+      "speech": "I want to talk",
+      "text": "talk"
+    },
+    "teeth brush": {
+      "speech": "I want to brush my teeth",
+      "text": "teeth brush"
+    },
+    "toilet": {
+      "speech": "I want to use the toilet",
+      "text": "toilet"
+    },
+    "walk": {
+      "speech": "I want to walk",
+      "text": "walk"
+    },
+    "watch tv": {
+      "speech": "I want to watch TV",
+      "text": "watch tv"
+    },
+    "wheelchair": {
+      "speech": "I want to use a wheelchair",
+      "text": "wheelchair"
     }
+  },
+  "ifeel": {
+    "__speech__": "I feel",
+    "angry": {
+      "speech": "I feel angry",
+      "text": "angry"
+    },
+    "arm pain": {
+      "speech": "I feel arm pain",
+      "text": "arm pain"
+    },
+    "back pain": {
+      "speech": "I feel back pain",
+      "text": "back pain"
+    },
+    "bottom pain": {
+      "speech": "I feel bottom pain",
+      "text": "bottom pain"
+    },
+    "chest pain": {
+      "speech": "I feel chest pain",
+      "text": "chest pain"
+    },
+    "cold": {
+      "speech": "I feel cold",
+      "text": "cold"
+    },
+    "ear pain": {
+      "speech": "I feel ear pain",
+      "text": "ear pain"
+    },
+    "elbow pain": {
+      "speech": "I feel elbow pain",
+      "text": "elbow pain"
+    },
+    "eye pain": {
+      "speech": "I feel eye pain",
+      "text": "eye pain"
+    },
+    "feet pain": {
+      "speech": "I feel feet pain",
+      "text": "feet pain"
+    },
+    "hand pain": {
+      "speech": "I feel hand pain",
+      "text": "hand pain"
+    },
+    "happy": {
+      "speech": "I feel happy",
+      "text": "happy"
+    },
+    "head pain": {
+      "speech": "I feel head pain",
+      "text": "head pain"
+    },
+    "hip pain": {
+      "speech": "I feel hip pain",
+      "text": "hip pain"
+    },
+    "hot": {
+      "speech": "I feel hot",
+      "text": "hot"
+    },
+    "hungry": {
+      "speech": "I feel hungry",
+      "text": "hungry"
+    },
+    "itchy": {
+      "speech": "I feel itchy",
+      "text": "itchy"
+    },
+    "knee pain": {
+      "speech": "I feel knee pain",
+      "text": "knee pain"
+    },
+    "leg pain": {
+      "speech": "I feel leg pain",
+      "text": "leg pain"
+    },
+    "neck pain": {
+      "speech": "I feel neck pain",
+      "text": "neck pain"
+    },
+    "nose pain": {
+      "speech": "I feel nose pain",
+      "text": "nose pain"
+    },
+    "sad": {
+      "speech": "I feel sad",
+      "text": "sad"
+    },
+    "scared": {
+      "speech": "I feel scared",
+      "text": "scared"
+    },
+    "shoulder pain": {
+      "speech": "I feel shoulder pain",
+      "text": "shoulder pain"
+    },
+    "sleepy": {
+      "speech": "I feel sleepy",
+      "text": "sleepy"
+    },
+    "stomach pain": {
+      "speech": "I feel stomach pain",
+      "text": "stomach pain"
+    },
+    "stress": {
+      "speech": "I feel stressed",
+      "text": "stress"
+    },
+    "teeth pain": {
+      "speech": "I feel teeth pain",
+      "text": "teeth pain"
+    },
+    "tired": {
+      "speech": "I feel tired",
+      "text": "tired"
+    }
+  },
+  "food": {
+    "__speech__": "",
+    "__group__": {
+      "fruit": "Fruit",
+      "curry": "Curry",
+      "main": "Main Course",
+      "yum": "Yum",
+      "dessert": "Dessert",
+      "steam": "Steam",
+      "stir fry": "Stir Fry",
+      "fried": "Fried",
+      "salad": "Salad"
+    },
+    "apple": {
+      "speech": "apple",
+      "text": "apple"
+    },
+    "cantaloop": {
+      "speech": "cantaloop",
+      "text": "cantaloop"
+    },
+    "rose apple": {
+      "speech": "rose apple",
+      "text": "rose apple"
+    },
+    "dragonfruit": {
+      "speech": "dragonfruit",
+      "text": "dragonfruit"
+    },
+    "durian": {
+      "speech": "durian",
+      "text": "durian"
+    },
+    "guava": {
+      "speech": "guava",
+      "text": "guava"
+    },
+    "pumpkin": {
+      "speech": "pumpkin",
+      "text": "pumpkin"
+    },
+    "banana": {
+      "speech": "banana",
+      "text": "banana"
+    },
+    "longan": {
+      "speech": "longan",
+      "text": "longan"
+    },
+    "lynchee": {
+      "speech": "lynchee",
+      "text": "lynchee"
+    },
+    "longkong": {
+      "speech": "longkong",
+      "text": "longkong"
+    },
+    "papaya": {
+      "speech": "papaya",
+      "text": "papaya"
+    },
+    "mango": {
+      "speech": "mango",
+      "text": "mango"
+    },
+    "mangostein": {
+      "speech": "mangostein",
+      "text": "mangostein"
+    },
+    "pineapple": {
+      "speech": "pineapple",
+      "text": "pineapple"
+    },
+    "strawberry": {
+      "speech": "strawberry",
+      "text": "strawberry"
+    },
+    "tamarind": {
+      "speech": "tamarind",
+      "text": "tamarind"
+    },
+    "watermelon": {
+      "speech": "watermelon",
+      "text": "watermelon"
+    },
+    "taro": {
+      "speech": "taro",
+      "text": "taro"
+    },
+    "orange": {
+      "speech": "orange",
+      "text": "orange"
+    },
+    "grape": {
+      "speech": "grape",
+      "text": "grape"
+    },
+    "rambutan": {
+      "speech": "rambutan",
+      "text": "rambutan"
+    },
+    "custard apple": {
+      "speech": "custard apple",
+      "text": "custard apple"
+    },
+    "jackfruit": {
+      "speech": "jackfruit",
+      "text": "jackfruit"
+    },
+    "จับฉ่าย": {
+      "speech": "Mixed Vegetable Stew",
+      "text": "Mixed Vegetable Stew"
+    },
+    "แกงจืดเต้าหู้": {
+      "speech": "Tofu Soup",
+      "text": "Tofu Soup"
+    },
+    "แกงเขียวหวาน": {
+      "speech": "Green Curry",
+      "text": "Green Curry"
+    },
+    "แกงมะระ": {
+      "speech": "Bitter Melon Soup",
+      "text": "Bitter Melon Soup"
+    },
+    "แกงส้มชะอม": {
+      "speech": "Sour Curry with Cha-Om",
+      "text": "Sour Curry with Cha-Om"
+    },
+    "แกงเหลืองหมู": {
+      "speech": "Yellow Curry with Pork",
+      "text": "Yellow Curry with Pork"
+    },
+    "ไข่พะโล้": {
+      "speech": "Five-Spice Eggs",
+      "text": "Five-Spice Eggs"
+    },
+    "แกงมัสมั่น": {
+      "speech": "Massaman Curry",
+      "text": "Massaman Curry"
+    },
+    "แกงเห็ด": {
+      "speech": "Mushroom Soup",
+      "text": "Mushroom Soup"
+    },
+    "พะแนงหมู": {
+      "speech": "Panang Pork Curry",
+      "text": "Panang Pork Curry"
+    },
+    "โป๊ะแตก": {
+      "speech": "Spicy Seafood Soup",
+      "text": "Spicy Seafood Soup"
+    },
+    "ซุปไก่": {
+      "speech": "Chicken Soup",
+      "text": "Chicken Soup"
+    },
+    "ต้มยำกุ้ง": {
+      "speech": "Tom Yum Kung",
+      "text": "Tom Yum Kung"
+    },
+    "ต้มแซบ": {
+      "speech": "Spicy Soup",
+      "text": "Spicy Soup"
+    },
+    "บะหมี่หมูแดง": {
+      "speech": "Egg Noodles with Red Pork",
+      "text": "Egg Noodles with Red Pork"
+    },
+    "บะหมี่หมูกรอบ": {
+      "speech": "Egg Noodles with Crispy Pork",
+      "text": "Egg Noodles with Crispy Pork"
+    },
+    "เบอร์เกอร์เนื้อ": {
+      "speech": "Beef Burger",
+      "text": "Beef Burger"
+    },
+    "สเต็กเนื้อ": {
+      "speech": "Beef Steak",
+      "text": "Beef Steak"
+    },
+    "ก๋วยเตี๋ยวไก่": {
+      "speech": "Chicken Noodles",
+      "text": "Chicken Noodles"
+    },
+    "เฝอ": {
+      "speech": "Pho",
+      "text": "Pho"
+    },
+    "ไส้กรอกเยอรมัน": {
+      "speech": "German Sausage",
+      "text": "German Sausage"
+    },
+    "โจ๊ก": {
+      "speech": "Rice Porridge",
+      "text": "Rice Porridge"
+    },
+    "ขนมจีน": {
+      "speech": "Fermented Rice Noodles",
+      "text": "Fermented Rice Noodles"
+    },
+    "ข้าวไข่เจียว": {
+      "speech": "Omelette with Rice",
+      "text": "Omelette with Rice"
+    },
+    "ข้าวไข่ข้นกุ้ง": {
+      "speech": "Rice with Scrambled Eggs and Shrimp",
+      "text": "Rice with Scrambled Eggs and Shrimp"
+    },
+    "ข้าวไก่ย่าง": {
+      "speech": "Grilled Chicken with Rice",
+      "text": "Grilled Chicken with Rice"
+    },
+    "ข้าวขาหมู": {
+      "speech": "Stewed Pork Leg with Rice",
+      "text": "Stewed Pork Leg with Rice"
+    },
+    "ข้าวคลุกกะปิ": {
+      "speech": "Shrimp Paste Fried Rice",
+      "text": "Shrimp Paste Fried Rice"
+    },
+    "ข้าวหมูทอดราดไข่": {
+      "speech": "Fried Pork with Rice and Egg",
+      "text": "Fried Pork with Rice and Egg"
+    },
+    "ข้าวมันไก่": {
+      "speech": "Hainanese Chicken Rice",
+      "text": "Hainanese Chicken Rice"
+    },
+    "ข้าวเหนียวหมูปิ้ง": {
+      "speech": "Grilled Pork with Sticky Rice",
+      "text": "Grilled Pork with Sticky Rice"
+    },
+    "ข้าวหน้ากะเพราหมูทอด": {
+      "speech": "Rice with Fried Pork and Basil",
+      "text": "Rice with Fried Pork and Basil"
+    },
+    "ข้าวหน้าเป็ด": {
+      "speech": "Rice with Duck",
+      "text": "Rice with Duck"
+    },
+    "ข้าวหน้าปลาดิบ": {
+      "speech": "Rice with Sashimi",
+      "text": "Rice with Sashimi"
+    },
+    "ข้าวหน้าแซลมอน": {
+      "speech": "Rice with Salmon",
+      "text": "Rice with Salmon"
+    },
+    "ข้าวผัดหมู": {
+      "speech": "Fried Rice with Pork",
+      "text": "Fried Rice with Pork"
+    },
+    "ข้าวผัดแกงเขียวหวาน": {
+      "speech": "Green Curry Fried Rice",
+      "text": "Green Curry Fried Rice"
+    },
+    "ข้าวผัดกุ้ง": {
+      "speech": "Fried Rice with Shrimp",
+      "text": "Fried Rice with Shrimp"
+    },
+    "ข้าวผัดปู": {
+      "speech": "Fried Rice with Crab",
+      "text": "Fried Rice with Crab"
+    },
+    "ข้าวผัดสับปะรด": {
+      "speech": "Pineapple Fried Rice",
+      "text": "Pineapple Fried Rice"
+    },
+    "ข้าวราดกระเพราไข่ดาว": {
+      "speech": "Rice with Basil and Fried Egg",
+      "text": "Rice with Basil and Fried Egg"
+    },
+    "ข้าวต้มหมู": {
+      "speech": "Rice Soup with Pork",
+      "text": "Rice Soup with Pork"
+    },
+    "ข้าวต้มปลา": {
+      "speech": "Rice Soup with Fish",
+      "text": "Rice Soup with Fish"
+    },
+    "เคบับ": {
+      "speech": "Kebab",
+      "text": "Kebab"
+    },
+    "ก๋วยเตี๋ยวเซี่ยงไฮ้": {
+      "speech": "Shanghai Noodles",
+      "text": "Shanghai Noodles"
+    },
+    "ก๋วยจั๊บ": {
+      "speech": "Guay Jub",
+      "text": "Guay Jub"
+    },
+    "ลักซา": {
+      "speech": "Laksa",
+      "text": "Laksa"
+    },
+    "มาม่า": {
+      "speech": "Instant Noodles",
+      "text": "Instant Noodles"
+    },
+    "แหนมเนือง": {
+      "speech": "Vietnamese Sausage",
+      "text": "Vietnamese Sausage"
+    },
+    "ก๋วยเตี๋ยว": {
+      "speech": "Noodles",
+      "text": "Noodles"
+    },
+    "น้ำตก": {
+      "speech": "Nam Tok",
+      "text": "Nam Tok"
+    },
+    "พาสต้า": {
+      "speech": "Pasta",
+      "text": "Pasta"
+    },
+    "พิซซ่า": {
+      "speech": "Pizza",
+      "text": "Pizza"
+    },
+    "เบอร์เกอร์หมู": {
+      "speech": "Pork Burger",
+      "text": "Pork Burger"
+    },
+    "สเต็กหมู": {
+      "speech": "Pork Steak",
+      "text": "Pork Steak"
+    },
+    "ผัดมาม่า": {
+      "speech": "Stir-Fried Instant Noodles",
+      "text": "Stir-Fried Instant Noodles"
+    },
+    "ผัดหมี่": {
+      "speech": "Stir-Fried Noodles",
+      "text": "Stir-Fried Noodles"
+    },
+    "ผัดซีอิ๊ว": {
+      "speech": "Stir-Fried Noodles with Soy Sauce",
+      "text": "Stir-Fried Noodles with Soy Sauce"
+    },
+    "ผัดไทย": {
+      "speech": "Pad Thai",
+      "text": "Pad Thai"
+    },
+    "ราเมน": {
+      "speech": "Ramen",
+      "text": "Ramen"
+    },
+    "ซาชิมิ": {
+      "speech": "Sashimi",
+      "text": "Sashimi"
+    },
+    "ยำทะเลเย็น": {
+      "speech": "Spicy Seafood Salad",
+      "text": "Spicy Seafood Salad"
+    },
+    "ซูชิ": {
+      "speech": "Sushi",
+      "text": "Sushi"
+    },
+    "เตี๋ยวต้มยำ": {
+      "speech": "Tom Yum Noodles",
+      "text": "Tom Yum Noodles"
+    },
+    "ฮะเก๋า": {
+      "speech": "Har Gow",
+      "text": "Har Gow"
+    },
+    "ห่อหมก": {
+      "speech": "Steamed Curry Fish",
+      "text": "Steamed Curry Fish"
+    },
+    "หอยแมลงภู่อบกระเทียม": {
+      "speech": "Garlic Butter Mussels",
+      "text": "Garlic Butter Mussels"
+    },
+    "หอยแมลงภู่อบ": {
+      "speech": "Steamed Mussels",
+      "text": "Steamed Mussels"
+    },
+    "ไข่เจียวลาวา": {
+      "speech": "Lava Omelette",
+      "text": "Lava Omelette"
+    },
+    "ไข่ต้ม": {
+      "speech": "Boiled Egg",
+      "text": "Boiled Egg"
+    },
+    "ขนมจีบ": {
+      "speech": "Dim Sum",
+      "text": "Dim Sum"
+    },
+    "ก๋วยเตี๋ยวหลอด": {
+      "speech": "Rice Noodle Rolls",
+      "text": "Rice Noodle Rolls"
+    },
+    "ขนมกุยช่าย": {
+      "speech": "Chinese Chive Dumplings",
+      "text": "Chinese Chive Dumplings"
+    },
+    "ปลานึ่งซีอิ๊ว": {
+      "speech": "Steamed Fish in Soy Sauce",
+      "text": "Steamed Fish in Soy Sauce"
+    },
+    "ปูนึ่ง": {
+      "speech": "Steamed Crab",
+      "text": "Steamed Crab"
+    },
+    "ซาลาเปา": {
+      "speech": "Steamed Bun",
+      "text": "Steamed Bun"
+    },
+    "ผักโขมอบชีส": {
+      "speech": "Baked Spinach with Cheese",
+      "text": "Baked Spinach with Cheese"
+    },
+    "ไก่ผัดขิง": {
+      "speech": "Ginger Chicken Stir-Fry",
+      "text": "Ginger Chicken Stir-Fry"
+    },
+    "ไก่ผัดหน่อไม้": {
+      "speech": "Stir-Fried Chicken with Bamboo Shoots",
+      "text": "Stir-Fried Chicken with Bamboo Shoots"
+    },
+    "กระเพราหมูสับ": {
+      "speech": "Minced Pork with Basil",
+      "text": "Minced Pork with Basil"
+    },
+    "หมูผัดขิง": {
+      "speech": "Stir-Fried Pork with Ginger",
+      "text": "Stir-Fried Pork with Ginger"
+    },
+    "หมูผัดน้ำมันหอย": {
+      "speech": "Stir-Fried Pork with Oyster Sauce",
+      "text": "Stir-Fried Pork with Oyster Sauce"
+    },
+    "ผัดผักบุ้ง": {
+      "speech": "Stir-Fried Morning Glory",
+      "text": "Stir-Fried Morning Glory"
+    },
+    "ปลาดุกฟู": {
+      "speech": "Crispy Catfish",
+      "text": "Crispy Catfish"
+    },
+    "ปลาราดพริก": {
+      "speech": "Fried Fish with Chili Sauce",
+      "text": "Fried Fish with Chili Sauce"
+    },
+    "ผัดฉ่า": {
+      "speech": "Spicy Stir-Fry",
+      "text": "Spicy Stir-Fry"
+    },
+    "ผัดคะน้า": {
+      "speech": "Stir-Fried Kale",
+      "text": "Stir-Fried Kale"
+    },
+    "ผัดผักรวม": {
+      "speech": "Stir-Fried Mixed Vegetables",
+      "text": "Stir-Fried Mixed Vegetables"
+    },
+    "ผัดผักกรูมพี่": {
+      "speech": "Stir-Fried Chinese Broccoli",
+      "text": "Stir-Fried Chinese Broccoli"
+    },
+    "ผัดผงกะหรี่": {
+      "speech": "Stir-Fried Curry Powder",
+      "text": "Stir-Fried Curry Powder"
+    },
+    "ผัดถั่วหมู": {
+      "speech": "Stir-Fried Pork with Beans",
+      "text": "Stir-Fried Pork with Beans"
+    },
+    "ผัดวุ้นเส้น": {
+      "speech": "Stir-Fried Glass Noodles",
+      "text": "Stir-Fried Glass Noodles"
+    },
+    "หอยกระเทียม": {
+      "speech": "Garlic Fried Shells",
+      "text": "Garlic Fried Shells"
+    },
+    "หอยราดพริก": {
+      "speech": "Chili Fried Shells",
+      "text": "Chili Fried Shells"
+    },
+    "เต้าหู้ผัดพริก": {
+      "speech": "Spicy Stir-Fried Tofu",
+      "text": "Spicy Stir-Fried Tofu"
+    },
+    "บัวลอย": {
+      "speech": "Bua Loy",
+      "text": "Bua Loy"
+    },
+    "เฉาก๊วย": {
+      "speech": "Grass Jelly",
+      "text": "Grass Jelly"
+    },
+    "ขนมครก": {
+      "speech": "Coconut Pudding",
+      "text": "Coconut Pudding"
+    },
+    "ขนมต้ม": {
+      "speech": "Steamed Coconut Dumplings",
+      "text": "Steamed Coconut Dumplings"
+    },
+    "ข้าวเหนียวมะม่วง": {
+      "speech": "Mango Sticky Rice",
+      "text": "Mango Sticky Rice"
+    },
+    "กวยบัวดึง": {
+      "speech": "Taro in Coconut Milk",
+      "text": "Taro in Coconut Milk"
+    },
+    "ลอดช่อง": {
+      "speech": "Lod Chong",
+      "text": "Lod Chong"
+    },
+    "เมลอนกะทิ": {
+      "speech": "Melon in Coconut Milk",
+      "text": "Melon in Coconut Milk"
+    },
+    "ขนมไทยรวม": {
+      "speech": "Mixed Thai Desserts",
+      "text": "Mixed Thai Desserts"
+    },
+    "ซาหลิม": {
+      "speech": "Salim",
+      "text": "Salim"
+    },
+    "บัวลอยเผือก": {
+      "speech": "Taro Balls in Coconut Milk",
+      "text": "Taro Balls in Coconut Milk"
+    },
+    "เต้าฮวย": {
+      "speech": "Tofu Dessert",
+      "text": "Tofu Dessert"
+    },
+    "ทับทิมกรอบ": {
+      "speech": "Water Chestnuts in Coconut Milk",
+      "text": "Water Chestnuts in Coconut Milk"
+    },
+    "เบคอนทอด": {
+      "speech": "Fried Bacon",
+      "text": "Fried Bacon"
+    },
+    "ห่อจ้อ": {
+      "speech": "Deep-Fried Crab Roll",
+      "text": "Deep-Fried Crab Roll"
+    },
+    "แก้วทอด": {
+      "speech": "Deep-Fried Spring Roll",
+      "text": "Deep-Fried Spring Roll"
+    },
+    "แก้วซ่า": {
+      "speech": "Fried Dumpling",
+      "text": "Fried Dumpling"
+    },
+    "ไข่ดาว": {
+      "speech": "Fried Egg",
+      "text": "Fried Egg"
+    },
+    "ไข่เจียว": {
+      "speech": "Omelette",
+      "text": "Omelette"
+    },
+    "ไข่นกกระทาทอด": {
+      "speech": "Fried Quail Eggs",
+      "text": "Fried Quail Eggs"
+    },
+    "ไข่ทอด": {
+      "speech": "Fried Egg",
+      "text": "Fried Egg"
+    },
+    "ไก่ย่าง": {
+      "speech": "Grilled Chicken",
+      "text": "Grilled Chicken"
+    },
+    "กุ้งเผา": {
+      "speech": "Grilled Shrimp",
+      "text": "Grilled Shrimp"
+    },
+    "คอหมูย่าง": {
+      "speech": "Grilled Pork Neck",
+      "text": "Grilled Pork Neck"
+    },
+    "หมึกทอด": {
+      "speech": "Fried Squid",
+      "text": "Fried Squid"
+    },
+    "นักเก็ต": {
+      "speech": "Nuggets",
+      "text": "Nuggets"
+    },
+    "ปลาทอด": {
+      "speech": "Fried Fish",
+      "text": "Fried Fish"
+    },
+    "เปลือกหอยย่าง": {
+      "speech": "Grilled Shellfish",
+      "text": "Grilled Shellfish"
+    },
+    "เสือร้องไห้": {
+      "speech": "Grilled Brisket",
+      "text": "Grilled Brisket"
+    },
+    "ทอดมัน": {
+      "speech": "Fish Cake",
+      "text": "Fish Cake"
+    },
+    "ยำกุ้งน้ำปลา": {
+      "speech": "Shrimp Salad with Fish Sauce",
+      "text": "Shrimp Salad with Fish Sauce"
+    },
+    "ลาบหมู": {
+      "speech": "Spicy Pork Salad",
+      "text": "Spicy Pork Salad"
+    },
+    "หมูมะนาว": {
+      "speech": "Pork Salad with Lime",
+      "text": "Pork Salad with Lime"
+    },
+    "น้ำพริกกะปิ": {
+      "speech": "Shrimp Paste Chili Dip",
+      "text": "Shrimp Paste Chili Dip"
+    },
+    "น้ำพริกปลาทู": {
+      "speech": "Mackerel Chili Dip",
+      "text": "Mackerel Chili Dip"
+    },
+    "น้ำพริกไข่ปู": {
+      "speech": "Crab Egg Chili Dip",
+      "text": "Crab Egg Chili Dip"
+    },
+    "น้ำตกหมู": {
+      "speech": "Spicy Grilled Pork Salad",
+      "text": "Spicy Grilled Pork Salad"
+    },
+    "ปลาลวก": {
+      "speech": "Boiled Fish",
+      "text": "Boiled Fish"
+    },
+    "สลัดไก่": {
+      "speech": "Chicken Salad",
+      "text": "Chicken Salad"
+    },
+    "สลัดปลาดอร์": {
+      "speech": "Salad with Fried Fish",
+      "text": "Salad with Fried Fish"
+    },
+    "สลัดผัก": {
+      "speech": "Vegetable Salad",
+      "text": "Vegetable Salad"
+    },
+    "ตับวอน": {
+      "speech": "Boiled Liver",
+      "text": "Boiled Liver"
+    },
+    "ตำข้าวโพด": {
+      "speech": "Spicy Corn Salad",
+      "text": "Spicy Corn Salad"
+    },
+    "ตำปลาร้า": {
+      "speech": "Spicy Salad with Fermented Fish",
+      "text": "Spicy Salad with Fermented Fish"
+    },
+    "ตำไทย": {
+      "speech": "Papaya Salad",
+      "text": "Papaya Salad"
+    },
+    "ยำรวมมิตรกุ้ง": {
+      "speech": "Mixed Seafood Salad with Shrimp",
+      "text": "Mixed Seafood Salad with Shrimp"
+    },
+    "ยำแซลมอน": {
+      "speech": "Salmon Salad",
+      "text": "Salmon Salad"
+    },
+    "ยำวุ้นเส้น": {
+      "speech": "Glass Noodle Salad",
+      "text": "Glass Noodle Salad"
+    }
+  },
+  "beverage": {
+    "__speech__": "",
+    "__group__": {
+      "hot": "Hot",
+      "iced": "Iced",
+      "smoothie": "Smoothie",
+      "frappe": "Frappe"
+    },
+    "ชาเขียวเย็น": { "speech": "Iced Green Tea", "text": "Iced Green Tea" },
+    "ชาเย็น": { "speech": "Thai Iced Tea", "text": "Thai Iced Tea" },
+    "โค้ก": { "speech": "Coke", "text": "Coke" },
+    "กาแฟเย็น": { "speech": "Iced Coffee", "text": "Iced Coffee" },
+    "เก๊กฮวย": { "speech": "Chrysanthemum Tea", "text": "Chrysanthemum Tea" },
+    "น้ำใบบัวบก": { "speech": "Pennywort Juice", "text": "Pennywort Juice" },
+    "น้ำกระเจี๊ยบ": { "speech": "Roselle Juice", "text": "Roselle Juice" },
+    "น้ำมะนาว": { "speech": "Lemon Juice", "text": "Lemon Juice" },
+    "น้ำมะพร้าว": { "speech": "Coconut Water", "text": "Coconut Water" },
+    "น้ำเปล่า": { "speech": "Water", "text": "Water" },
+    "น้ำผึ้งมะนาว": { "speech": "Honey Lemon", "text": "Honey Lemon" },
+    "น้ำส้ม": { "speech": "Orange Juice", "text": "Orange Juice" },
+    "นมเย็น": { "speech": "Pink Milk", "text": "Pink Milk" },
+    "โอเลี้ยง": { "speech": "Thai Black Coffee", "text": "Thai Black Coffee" },
+    "แอปเปิ้ลปั่น": { "speech": "Apple Smoothie", "text": "Apple Smoothie" },
+    "กล้วยปั่น": { "speech": "Banana Smoothie", "text": "Banana Smoothie" },
+    "ชาเขียวปั่น": { "speech": "Green Tea Frappe", "text": "Green Tea Frappe" },
+    "โกโก้ปั่น": { "speech": "Cocoa Frappe", "text": "Cocoa Frappe" },
+    "กาแฟปั่น": { "speech": "Coffee Frappe", "text": "Coffee Frappe" },
+    "มิลค์เชค": { "speech": "Milkshake", "text": "Milkshake" },
+    "ผลไม้รวมปั่น": {
+      "speech": "Mixed Fruit Smoothie",
+      "text": "Mixed Fruit Smoothie"
+    },
+    "สับปะรดปั่น": {
+      "speech": "Pineapple Smoothie",
+      "text": "Pineapple Smoothie"
+    },
+    "สตรอว์เบอร์รี่ปั่น": {
+      "speech": "Strawberry Smoothie",
+      "text": "Strawberry Smoothie"
+    },
+    "แตงโมปั่น": {
+      "speech": "Watermelon Smoothie",
+      "text": "Watermelon Smoothie"
+    },
+    "ชาไทยปั่น": { "speech": "Thai Tea Frappe", "text": "Thai Tea Frappe" },
+    "ผักปั่น": { "speech": "Vegetable Smoothie", "text": "Vegetable Smoothie" },
+    "ชาเขียวร้อน": { "speech": "Hot Green Tea", "text": "Hot Green Tea" },
+    "กาแฟร้อน": { "speech": "Hot Coffee", "text": "Hot Coffee" },
+    "เก๊กฮวยร้อน": {
+      "speech": "Hot Chrysanthemum Tea",
+      "text": "Hot Chrysanthemum Tea"
+    },
+    "น้ำมะนาวร้อน": { "speech": "Hot Lemon Juice", "text": "Hot Lemon Juice" },
+    "น้ำใบเตยร้อน": {
+      "speech": "Hot Pandan Juice",
+      "text": "Hot Pandan Juice"
+    },
+    "น้ำชา": { "speech": "Hot Tea", "text": "Hot Tea" },
+    "น้ำเปล่าร้อน": { "speech": "Hot Water", "text": "Hot Water" },
+    "น้ำเต้าหู้ร้อน": { "speech": "Hot Soy Milk", "text": "Hot Soy Milk" }
+  },
+  "location": {
+    "__speech__": "I want to go",
+    "home": {
+      "speech": "I want to go home",
+      "text": "home"
+    },
+    "hospital": {
+      "speech": "I want to go to the hospital",
+      "text": "hospital"
+    },
+    "grocery": {
+      "speech": "I want to go to the grocery store",
+      "text": "grocery store"
+    },
+    "temple": {
+      "speech": "I want to go to the temple",
+      "text": "temple"
+    },
+    "park": {
+      "speech": "I want to go to the park",
+      "text": "park"
+    },
+    "mall": {
+      "speech": "I want to go to the mall",
+      "text": "mall"
+    }
+  }
 }
