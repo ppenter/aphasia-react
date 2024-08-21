@@ -53,14 +53,19 @@ export const ListView: React.FC<IListView> = ({
   const [voices, setVoices] = useRecoilState(voicesState);
   const [voice, setVoice] = useRecoilState(voiceState);
   const [languages, setLanguages] = useState<string[]>([]);
+  const [group_list, setGroupList] = useState<any>();
 
-  const group_list = list?.reduce((acc: any, item: any) => {
-    if (!acc[item?.group]) {
-      acc[item?.group] = [];
-    }
-    acc[item?.group].push(item);
-    return acc;
-  }, {});
+  const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    setGroupList(list?.reduce((acc: any, item: any) => {
+      if (!acc[item?.group]) {
+        acc[item?.group] = [];
+      }
+      acc[item?.group].push(item);
+      return acc;
+    }, {}));
+  }, [list])
   // const [tts, setTTS] = useRecoilState(ttsState)
 
   const loadVoices = async () => {
@@ -91,8 +96,42 @@ export const ListView: React.FC<IListView> = ({
     loadVoices();
   }, [i18n?.language]);
 
+  useEffect(() => {
+    // debounce search
+    const timer = setTimeout(() => {
+      if (search) {
+        // filter list
+        const filtered = list?.filter((item: any) => {
+          const translation = t(`${item?.id}.text`);
+          return  translation?.toLowerCase()?.includes(search?.toLowerCase()) || item?.title?.toLowerCase()?.includes(search?.toLowerCase());
+        });
+        setGroupList(filtered?.reduce((acc: any, item: any) => {
+          if (!acc[item?.group]) {
+            acc[item?.group] = [];
+          }
+          acc[item?.group].push(item);
+          return acc;
+        }, {}));
+      }else{
+        setGroupList(list?.reduce((acc: any, item: any) => {
+          if (!acc[item?.group]) {
+            acc[item?.group] = [];
+          }
+          acc[item?.group].push(item);
+          return acc;
+        }, {}));
+      }
+      console.log("search", group_list );
+    }, 500);
+    return () => clearTimeout(timer);
+  },[search])
+
+
   return (
-    <div className="flex flex-col p-4 pt-6">
+    <div className="flex flex-col gap-4 p-4 pt-6">
+      <input type="text" className="p-2 border-2 border-dashed rounded-lg" value={search} onChange={e => {
+        setSearch(e.target.value)
+      }} />
       <div className="">
         {group_list &&
           Object.keys(group_list)?.map?.((group, index) => {
