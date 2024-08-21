@@ -8,6 +8,9 @@ export const siteConfig = {
         emoji: "🏠"
     },
     {
+        href: "/",
+    },
+    {
         title: "AphasiaTalk",
         href: "/",
         image: "/images/logo.png",
@@ -18,7 +21,13 @@ export const siteConfig = {
         href: "/settings",
         image: "/images/nav/nav_info.png",
         emoji: "⚙️"
-    }
+    },
+    {
+        title: "sos",
+        href: "/sos",
+        image: "/images/nav/nav_sos.png",
+        emoji: "⚙️"
+    },
 ]
 }
 

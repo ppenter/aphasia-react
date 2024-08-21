@@ -22,6 +22,7 @@ import { TypeTextPage } from './pages/type-text';
 import { FavoritesPage } from './pages/favorites';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { SosPage } from './pages/sos';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "/tts", element: <TypeTextPage />},
       { path: "/favorites", element: <FavoritesPage />},
       { path: "/:item", element: <ListPage />},
+      {path: "/sos", element: <SosPage/>}
     ]
   },
 ]);
