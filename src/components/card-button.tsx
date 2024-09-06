@@ -17,7 +17,7 @@ export const CardButton = ({
     <Link to={to}>
       <div
         className={cn(
-          "flex flex-col items-center items-center gap-4 px-4 py-12 bg-white justify-evenly",
+          "flex flex-col items-center items-center gap-4 px-4 bg-white justify-evenly h-full",
           className,
         )}
         style={{
@@ -31,7 +31,10 @@ export const CardButton = ({
         </div>
         <div className="flex-1">
           <h5
-            className={`whitespace-nowrap mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white ${titleClass}`}
+            className={`
+              whitespace-nowrap mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white ${titleClass}
+              max-sm:text-2xl
+              `}
           >
             {t(title)}
           </h5>
