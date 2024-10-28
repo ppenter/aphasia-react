@@ -6,14 +6,15 @@ export const MainPage: React.FC<PropsWithChildren> = () => {
   const gridRef = useRef(null);
 
   const applyColSpanToLastItem = () => {
-    if(!gridRef.current) return;
-    const gridContainer = gridRef.current as any
+    if (!gridRef.current) return;
+    const gridContainer = gridRef.current as any;
     const gridItems = gridContainer?.children;
-    const columns = getComputedStyle(gridContainer).gridTemplateColumns.split(' ').length;
+    const columns =
+      getComputedStyle(gridContainer).gridTemplateColumns.split(" ").length;
 
     // Reset last item's col-span class
     const lastItem = gridItems[gridItems.length - 1];
-    lastItem.classList.remove('col-span-1', 'col-span-2', 'col-span-3');
+    lastItem.classList.remove("col-span-1", "col-span-2", "col-span-3");
 
     // Calculate if the last row has fewer items and apply col-span
     const itemsInLastRow = gridItems.length % columns;
@@ -30,10 +31,10 @@ export const MainPage: React.FC<PropsWithChildren> = () => {
     const handleResize = () => {
       applyColSpanToLastItem();
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (

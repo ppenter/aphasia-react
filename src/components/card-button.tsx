@@ -12,7 +12,7 @@ export const CardButton = ({
   className,
 }: any) => {
   const { t, i18n } = useTranslation(["default"]);
-  const color = indexColor
+  const color = indexColor;
   // const color = genColor((indexColor + 1) * 4444);
   const getColor = (index: number) => {
     switch (index) {
@@ -27,7 +27,7 @@ export const CardButton = ({
       default:
         return "#FFD700";
     }
-  }
+  };
   const getTextColor = (index: number) => {
     switch (index) {
       case 0:
@@ -40,13 +40,14 @@ export const CardButton = ({
         return "#ffffff";
       default:
         return "#000000";
-  }};
+    }
+  };
   return (
     <Link to={to}>
       <div
         className={cn(
           "flex items-center gap-4 px-4 bg-white justify-evenly h-full",
-          className,
+          className
         )}
         style={{
           backgroundColor: `${getColor(indexColor)}`,
@@ -55,7 +56,12 @@ export const CardButton = ({
       >
         {/* Full width image */}
         <div className="">
-          <img src={img} width={64} height={64} className="min-w-[64px] invert" />
+          <img
+            src={img}
+            width={64}
+            height={64}
+            className="min-w-[64px] invert"
+          />
         </div>
         <div className="flex items-center justify-start flex-1">
           <h5
@@ -63,9 +69,9 @@ export const CardButton = ({
               whitespace-nowrap mb-2 text-5xl tracking-tight ${titleClass}
               max-xs:text-4xl
               `}
-              style={{
-                color: `${getTextColor(indexColor)}`,
-              }}
+            style={{
+              color: `${getTextColor(indexColor)}`,
+            }}
           >
             {t(title)}
           </h5>
