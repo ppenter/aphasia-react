@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 import { mainMenu } from "../configs/site";
 import { useParams } from "react-router-dom";
-import { ListView } from "../views/lists";
+import ListView from "../views/lists";
 
 export const ListPage: React.FC<PropsWithChildren> = ({ children }) => {
   const params = useParams();

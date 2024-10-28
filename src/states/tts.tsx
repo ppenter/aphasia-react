@@ -19,3 +19,8 @@ export const textState = atom<string>({
   key: "textState", // unique ID (with respect to other atoms/selectors)
   default: "", // default value (aka initial value)
 });
+
+export const favoriteState = atom<string[]>({
+  key: "favoriteState", // unique ID (with respect to other atoms/selectors)
+  default: [], // default value (aka initial value)
+});

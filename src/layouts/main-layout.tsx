@@ -11,7 +11,7 @@ export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
       <div className="h-full pt-6">
         <Outlet />
       </div>
-      <div className="fixed top-0 w-full p-4 bg-white bg-gray-300 shadow max-sm:pt-20">
+      <div className="fixed top-0 w-full p-4 bg-white bg-[#a1aab0] shadow max-sm:pt-20">
         <div className="flex items-center justify-between">
           {siteConfig?.navMenu?.map((item, index) => {
             if (!item?.title) return <div className="flex-1"></div>;

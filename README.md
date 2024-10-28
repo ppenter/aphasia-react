@@ -20,7 +20,8 @@ AphasiaTalk is a cross-platform application built using CapacitorJS and Yarn. It
 
 - Node.js (>= 20)
 - Yarn (>= 2.x)
-- Capacitor CLI (>= 5.x)
+- [Capacitor CLI](https://capacitorjs.com/docs/getting-started) (>= 5.x)
+- Gradle 17.0.11
 
 _Ensure you have these tools installed before proceeding._
 

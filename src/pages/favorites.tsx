@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { ListView } from "../views/lists";
+import ListView from "../views/lists";
 import { favoriteState } from "../states/fav";
 import { useRecoilState } from "recoil";
 import { mainMenu } from "../configs/site";
