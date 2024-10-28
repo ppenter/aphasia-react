@@ -284,7 +284,7 @@ const CarouselListView: React.FC<ICarouselListView> = ({
 
       return (
         <div
-          className="relative flex h-full overflow-hidden rounded-lg"
+          className="relative flex h-full overflow-hidden rounded-lg max-h-[40vh]"
           onClick={async () => {
             await speak(t(speech_id));
           }}
@@ -294,7 +294,7 @@ const CarouselListView: React.FC<ICarouselListView> = ({
             alt={pageItem.title}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+          <div className="absolute bottom-0 flex flex-col items-center justify-center w-full p-2 bg-black bg-opacity-50 h-fit">
             <h5
               className={cn(
                 "text-xl font-bold tracking-tight text-white break-words text-center"
